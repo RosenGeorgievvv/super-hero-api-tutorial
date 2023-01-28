@@ -59,9 +59,10 @@ const randomHero = () => {
 newHeroButton.onclick = () => getSuperHero(randomHero());
 searchButton.onclick = () => getSearchSuperHero(searchInput.value);
 
-searchInput.addEventListener("keypress", function(e){
-    if(e.key == "Enter"){
-        e.preventDefault()
-        searchButton.click()
-    }
-})
+searchInput.addEventListener("keypress", function (e) {
+  if (e.key == "Enter") {
+    e.preventDefault();
+    searchButton.click();
+    searchInput.value = ''
+  }
+});
