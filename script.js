@@ -40,8 +40,6 @@ const showHeroInfo = (character) => {
   heroImageDiv.innerHTML = `${name}${img}${stats}`
 }
 
-// <p>💪 Strength: ${json.powerstats.strength}</p><p>🧠 Intelligence: ${json.powerstats.intelligence}</p><p>🧠 Combat: ${json.powerstats.intelligence}</p><p>🧠 Speed: ${json.powerstats.intelligence}</p><p>🧠 Durability: ${json.powerstats.intelligence}</p>
-
 const getSearchSuperHero = (name) => {
   console.log(searchInput.value)
   fetch(`${baseURL}/search/${name}`)
