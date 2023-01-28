@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+  font-size: 30px;
+  background-color: rgb(113, 185, 230);
+}
+
+body > #searchButton {
+  padding: 5px;
+}
+body > #newHeroButton {
+  padding: 5px;
+}
+body > #searchInput{
+    padding: 5px
+}
+p {
+  font-size: 20px;
+}
+
